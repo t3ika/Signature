@@ -93,6 +93,26 @@ namespace Signature.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Reload_WF2 {
+            get {
+                object obj = ResourceManager.GetObject("Reload-WF2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Reload_WF3 {
+            get {
+                object obj = ResourceManager.GetObject("Reload-WF3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap signature {
             get {
                 object obj = ResourceManager.GetObject("signature", resourceCulture);

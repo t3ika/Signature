@@ -74,6 +74,7 @@
             this.metroTextBox15 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox_prenom = new MetroFramework.Controls.MetroTextBox();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -118,6 +119,7 @@
             // 
             // metroTabPage1
             // 
+            this.metroTabPage1.Controls.Add(this.metroTile4);
             this.metroTabPage1.Controls.Add(this.pictureBox11);
             this.metroTabPage1.Controls.Add(this.pictureBox10);
             this.metroTabPage1.Controls.Add(this.pictureBox9);
@@ -547,6 +549,17 @@
             this.metroStyleManager1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
+            // metroTile4
+            // 
+            this.metroTile4.Location = new System.Drawing.Point(622, 214);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(165, 82);
+            this.metroTile4.TabIndex = 52;
+            this.metroTile4.Text = "Re-testé le fichier";
+            this.metroTile4.TileImage = global::Signature.Properties.Resources.Reload_WF3;
+            this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile4.UseTileImage = true;
+            // 
             // pictureBox11
             // 
             this.pictureBox11.Location = new System.Drawing.Point(296, 361);
@@ -780,6 +793,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private MetroFramework.Controls.MetroTile metroTile4;
     }
 }
 

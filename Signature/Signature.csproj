@@ -94,6 +94,8 @@
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
     <Content Include="Resources\checkbox.png" />
+    <None Include="Resources\Reload-WF2.png" />
+    <None Include="Resources\Reload-WF3.png" />
     <Content Include="Resources\Warning.png" />
     <None Include="Resources\Document-WF1.png" />
     <None Include="Resources\Document-WF.png" />
