@@ -16,6 +16,7 @@ namespace Signature
     {
         string fichierNom;
         string fichierUnique;
+        string fichierSortie;
 
         public Form1()
         {
@@ -25,7 +26,6 @@ namespace Signature
         private void Form1_Load(object sender, EventArgs e)
         {
             //
-
             resetImage();
         }
 
@@ -113,6 +113,7 @@ namespace Signature
         {
             // reset
             resetImage();
+            resetTexte();
             // config
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.InitialDirectory = "c:\\";
@@ -158,10 +159,31 @@ namespace Signature
                         {
                             pictureBox6.Image = Signature.Properties.Resources.checkbox;
                         }
+                        else if (line.Contains(metroTextBox_divers1.Text))
+                        {
+                            pictureBox7.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers2.Text))
+                        {
+                            pictureBox8.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers3.Text))
+                        {
+                            pictureBox9.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers4.Text))
+                        {
+                            pictureBox10.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers5.Text))
+                        {
+                            pictureBox11.Image = Signature.Properties.Resources.checkbox;
+                        }
                         else
                         {
 
                         }
+                        openFileDialog1.Dispose();
                     }
                 }
             }
@@ -175,33 +197,54 @@ namespace Signature
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
+            // preparation nom fichier
+            fichierSortie = metroTextBox_nnom.Text.Replace(" ", ".");
+            // copie fichier
+
+            // creation tableau
+            string[] valeurEntree = new string[] { metroTextBox_nom.Text, metroTextBox_email.Text, metroTextBox_telephone.Text, metroTextBox_portable.Text, metroTextBox_fonction.Text, metroTextBox_divers1.Text, metroTextBox_divers2.Text, metroTextBox_divers3.Text, metroTextBox_divers4.Text, metroTextBox_divers5.Text };
+            string[] valeurSortie = new string[] { metroTextBox_nnom.Text, metroTextBox_nemail.Text, metroTextBox_ntelephone.Text, metroTextBox_nportable.Text, metroTextBox_nfonction.Text, metroTextBox_ndivers1.Text, metroTextBox_ndivers2.Text, metroTextBox_ndivers3.Text, metroTextBox_ndivers4.Text, metroTextBox_ndivers5.Text };
+            //
             try
             {
-                // Create an instance of StreamReader to read from a file.
-                // The using statement also closes the StreamReader.
+                // 
+                StreamReader reader = File.OpenText(fichierUnique);
                 using (StreamReader sr = new StreamReader(fichierUnique))
                 {
-                    string line;
-                    // Read and display lines from the file until the end of 
-                    // the file is reached.
-                    while ((line = sr.ReadLine()) != null)
+                    string ligne;
+                    // 
+                    List<string> listeElement = new List<string>();
+                    while (!reader.EndOfStream)
                     {
-                        if(line.Contains(metroTextBox_nom.Text))
-                        {
-                            MessageBox.Show("OK");
-                        }
-                        else
-                        {
+                        int compteur = 0;
 
+                        ligne = reader.ReadLine();
+                        listeElement.Add(ligne);
+                        if (ligne.Contains(valeurEntree[compteur]))
+                        {
+                            reader.Close();
+                            ligne.Replace(valeurEntree[compteur], valeurSortie[compteur]);
+
+                            
+
+
+                            StreamWriter writer = new StreamWriter(fichierUnique);
+                            foreach (var item in listeElement)
+                            {
+                                writer.WriteLine(item);
+                            }
+                            writer.Close();
                         }
+
+                        // boucle +
+                        compteur++;
                     }
                 }
             }
             catch (Exception p)
             {
-                // Let the user know what went wrong.
-                Console.WriteLine("The file could not be read:");
-                Console.WriteLine(p.Message);
+                // 
+                MessageBox.Show("Le fichier ne peut pas être lu : " + p.Message);
             }
         }
 
@@ -223,6 +266,20 @@ namespace Signature
             pictureBox9.Image = Signature.Properties.Resources.Warning;
             pictureBox10.Image = Signature.Properties.Resources.Warning;
             pictureBox11.Image = Signature.Properties.Resources.Warning;
+        }
+
+        void resetTexte()
+        {
+            metroTextBox_nnom.Text = "";
+            metroTextBox_nemail.Text = "";
+            metroTextBox_ntelephone.Text = "";
+            metroTextBox_nportable.Text = "";
+            metroTextBox_nfonction.Text = "";
+            metroTextBox_ndivers1.Text = "";
+            metroTextBox_ndivers2.Text = "";
+            metroTextBox_ndivers3.Text = "";
+            metroTextBox_ndivers4.Text = "";
+            metroTextBox_ndivers5.Text = "";
         }
     }
 }

@@ -65,7 +65,7 @@ namespace Signature.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Check_Mark {
             get {
-                object obj = ResourceManager.GetObject("Check Mark", resourceCulture);
+                object obj = ResourceManager.GetObject("Check_Mark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,39 +83,9 @@ namespace Signature.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Document_WF {
-            get {
-                object obj = ResourceManager.GetObject("Document-WF", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Document_WF1 {
             get {
-                object obj = ResourceManager.GetObject("Document-WF1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Folder_Open_01 {
-            get {
-                object obj = ResourceManager.GetObject("Folder-Open-01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icones_interne {
-            get {
-                object obj = ResourceManager.GetObject("icones interne", resourceCulture);
+                object obj = ResourceManager.GetObject("Document_WF1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
