@@ -93,6 +93,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <Content Include="Resources\checkbox.png" />
+    <Content Include="Resources\Warning.png" />
+    <None Include="Resources\Document-WF1.png" />
+    <None Include="Resources\Document-WF.png" />
     <None Include="Resources\Check Mark.png" />
     <None Include="Resources\signature.png" />
     <None Include="Resources\Folder-Open-01.png" />
