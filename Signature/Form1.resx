@@ -121,7 +121,7 @@
   <data name="metroTile3.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAFBSURBVEhL7ZWhTsNQGIUrJiYqeADExCRiD4DgARAIxCQS
+        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAAFBSURBVEhL7ZWhTsNQGIUrJiYqeADExCRiD4DgARAIxCQS
         iUDiEEgEEoFEIBEIxAQSOYmYnEAgkCQt3+k9CVwoJaS/YdmX/Dm9pzfnrFvXFmv+P3Vd7/wyG94aA4Gd
         VFV15q0xOPdHKHxBSm/vT4rthtIjb++PMzvRVTKzP861K3KcmcHmO+Sgz5Cx74ocTraxzZTMKHq+FfLJ
         nvRB0EtbYZD52FZ4ggzR1+TEQeZhW+EmM/UyDDLT3ystE5j3/jp104RC5oWyv16h7i5d4ZvXYZC5lRVi
@@ -133,7 +133,7 @@
   <data name="metroTile2.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAEOSURBVFhH7ZcxDoJAEEUpPISlh/AIHsJ7eRALC49gaUlp
+        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAAEOSURBVFhH7ZcxDoJAEEUpPISlh/AIHsJ7eRALC49gaUlp
         YekdwD/L0xDDQmZYCxJeMlmWzP/zA1tA9UvTNHvVtQ0iba1li52fOcM/zArRWbQtWxdIE+EQnXxeAIbH
         QpjQYOsCqbENhzCRwdYF0qTVEgthAoOtC6RfrS79IazZYOtCQ26m1fro1SsZCl3XtOahN/oEDja0cxiG
         1jz0hQIYkm5Uu4FK0JaHvnCAHNj6A+iRnrjlRtozNrMCXLjlRto7NvEApcB2gQHWM1AKbBcYYD0DpcB2
@@ -144,7 +144,7 @@
   <data name="metroTile_openfolder.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAFBSURBVEhL7ZWhTsNQGIUrJiYqeADExCRiD4DgARAIxCQS
+        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAAFBSURBVEhL7ZWhTsNQGIUrJiYqeADExCRiD4DgARAIxCQS
         iUDiEEgEEoFEIBEIxAQSOYmYnEAgkCQt3+k9CVwoJaS/YdmX/Dm9pzfnrFvXFmv+P3Vd7/wyG94aA4Gd
         VFV15q0xOPdHKHxBSm/vT4rthtIjb++PMzvRVTKzP861K3KcmcHmO+Sgz5Cx74ocTraxzZTMKHq+FfLJ
         nvRB0EtbYZD52FZ4ggzR1+TEQeZhW+EmM/UyDDLT3ystE5j3/jp104RC5oWyv16h7i5d4ZvXYZC5lRVi
@@ -156,7 +156,7 @@
   <data name="metroTile_valider.TileImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAADPSURBVEhL7ZLBDcIwEAT94EkBlEABFMKDriiEBw+KoAhK
+        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAADPSURBVEhL7ZLBDcIwEAT94EkBlEABFMKDriiEBw+KoAhK
         oAgkmyHcgSLsxNhnJCSPdHLsbHYUJa7zd4QQ1sxWtm15yLz3V+bG7OS4DSpjHWgqpX8kUzg7SMQOelOy
         I8tCYjZQ2GX1UFgm4+aKWco2C/LlMkIX5sx1lpRcnWxIQ46U++XfjNDpGX8zJeW87gchNHpDJSZlXydT
         CM9KWW1kCg8lpczGVKbwcFQao1qmUDIrNZMplCWl5jKF0g9pM5lC+UvaXKaIdP8TWed7nLsDA5bzlsoI

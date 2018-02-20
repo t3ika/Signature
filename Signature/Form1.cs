@@ -185,7 +185,7 @@ namespace Signature
                         {
 
                         }
-                        
+
                     }
                 }
             }
@@ -224,21 +224,21 @@ namespace Signature
                         listeElement.Add(ligne);
                         if (ligne.Contains(valeurEntree[compteur]))
                         {
-                            reader.Close();
+                            //reader.Close();
                             ligne.Replace(valeurEntree[compteur], valeurSortie[compteur]);
-                            
+
                         }
                         else
                         {
-                            reader.Close();
+                            //reader.Close();
                         }
-                        StreamWriter writer = new StreamWriter(fichierUnique);
+                        StreamWriter writer = new StreamWriter(@"c:\fichier.txt");
                         foreach (var item in listeElement)
                         {
                             writer.WriteLine(item);
                         }
                         writer.Close();
-
+                        reader.Close();
                         // boucle +
                         compteur++;
                     }
@@ -283,6 +283,78 @@ namespace Signature
             metroTextBox_ndivers3.Text = "";
             metroTextBox_ndivers4.Text = "";
             metroTextBox_ndivers5.Text = "";
+        }
+
+        private void metroTile4_Click(object sender, EventArgs e)
+        {
+            resetImage();
+
+            try
+            {
+                // Create an instance of StreamReader to read from a file.
+                // The using statement also closes the StreamReader.
+                using (StreamReader sr = new StreamReader(fichierUnique))
+                {
+                    string line;
+                    // Read and display lines from the file until the end of 
+                    // the file is reached.
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        if (line.Contains(metroTextBox_nom.Text))
+                        {
+                            pictureBox1.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_email.Text))
+                        {
+                            pictureBox3.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_telephone.Text))
+                        {
+                            pictureBox4.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_portable.Text))
+                        {
+                            pictureBox5.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_fonction.Text))
+                        {
+                            pictureBox6.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers1.Text))
+                        {
+                            pictureBox7.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers2.Text))
+                        {
+                            pictureBox8.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers3.Text))
+                        {
+                            pictureBox9.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers4.Text))
+                        {
+                            pictureBox10.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else if (line.Contains(metroTextBox_divers5.Text))
+                        {
+                            pictureBox11.Image = Signature.Properties.Resources.checkbox;
+                        }
+                        else
+                        {
+
+                        }
+
+                    }
+                }
+            }
+
+            catch (Exception p)
+            {
+                // Let the user know what went wrong.
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(p.Message);
+            }
         }
     }
 }

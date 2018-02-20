@@ -32,7 +32,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTextBox_adresse_unique = new MetroFramework.Controls.MetroTextBox();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox_ndivers5 = new MetroFramework.Controls.MetroTextBox();
@@ -70,30 +83,15 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.metroTile_openfolder = new MetroFramework.Controls.MetroTile();
+            this.metroTile_valider = new MetroFramework.Controls.MetroTile();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox15 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox_prenom = new MetroFramework.Controls.MetroTextBox();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
-            this.metroTile4 = new MetroFramework.Controls.MetroTile();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile_openfolder = new MetroFramework.Controls.MetroTile();
-            this.metroTile_valider = new MetroFramework.Controls.MetroTile();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            this.metroTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -104,6 +102,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.metroTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,6 +175,109 @@
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.Click += new System.EventHandler(this.metroTabPage1_Click);
             // 
+            // metroTile4
+            // 
+            this.metroTile4.Location = new System.Drawing.Point(622, 214);
+            this.metroTile4.Name = "metroTile4";
+            this.metroTile4.Size = new System.Drawing.Size(165, 82);
+            this.metroTile4.TabIndex = 52;
+            this.metroTile4.Text = "Re-testé le fichier";
+            this.metroTile4.TileImage = global::Signature.Properties.Resources.Reload_WF3;
+            this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile4.UseTileImage = true;
+            this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Location = new System.Drawing.Point(296, 361);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox11.TabIndex = 51;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Location = new System.Drawing.Point(296, 332);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox10.TabIndex = 50;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(296, 303);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox9.TabIndex = 49;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(296, 274);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox8.TabIndex = 48;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(296, 245);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox7.TabIndex = 47;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(296, 208);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox6.TabIndex = 46;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(296, 179);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox5.TabIndex = 45;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(296, 150);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox4.TabIndex = 44;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Location = new System.Drawing.Point(296, 121);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox3.TabIndex = 43;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(296, 91);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 23);
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.Location = new System.Drawing.Point(502, 29);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(43, 24);
+            this.metroTile3.TabIndex = 40;
+            this.metroTile3.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile3.TileImage")));
+            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile3.UseTileImage = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
+            // 
             // metroTextBox_adresse_unique
             // 
             this.metroTextBox_adresse_unique.Location = new System.Drawing.Point(12, 29);
@@ -183,6 +286,18 @@
             this.metroTextBox_adresse_unique.TabIndex = 39;
             this.metroTextBox_adresse_unique.Text = "adresse fichier";
             this.metroTextBox_adresse_unique.UseStyleColors = true;
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.Location = new System.Drawing.Point(622, 302);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(165, 82);
+            this.metroTile2.TabIndex = 38;
+            this.metroTile2.Text = "Création de la signature";
+            this.metroTile2.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile2.TileImage")));
+            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
             // 
             // metroTile1
             // 
@@ -514,6 +629,30 @@
             this.metroTextBox1.Text = "nom client";
             this.metroTextBox1.UseStyleColors = true;
             // 
+            // metroTile_openfolder
+            // 
+            this.metroTile_openfolder.Enabled = false;
+            this.metroTile_openfolder.Location = new System.Drawing.Point(305, 117);
+            this.metroTile_openfolder.Name = "metroTile_openfolder";
+            this.metroTile_openfolder.Size = new System.Drawing.Size(43, 24);
+            this.metroTile_openfolder.TabIndex = 5;
+            this.metroTile_openfolder.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile_openfolder.TileImage")));
+            this.metroTile_openfolder.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile_openfolder.UseTileImage = true;
+            this.metroTile_openfolder.Click += new System.EventHandler(this.metroTile_openfolder_Click);
+            // 
+            // metroTile_valider
+            // 
+            this.metroTile_valider.Enabled = false;
+            this.metroTile_valider.Location = new System.Drawing.Point(355, 88);
+            this.metroTile_valider.Name = "metroTile_valider";
+            this.metroTile_valider.Size = new System.Drawing.Size(99, 53);
+            this.metroTile_valider.TabIndex = 4;
+            this.metroTile_valider.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile_valider.TileImage")));
+            this.metroTile_valider.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile_valider.UseTileImage = true;
+            this.metroTile_valider.Click += new System.EventHandler(this.metroTile_valider_Click);
+            // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
@@ -549,144 +688,6 @@
             this.metroStyleManager1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroTile4
-            // 
-            this.metroTile4.Location = new System.Drawing.Point(622, 214);
-            this.metroTile4.Name = "metroTile4";
-            this.metroTile4.Size = new System.Drawing.Size(165, 82);
-            this.metroTile4.TabIndex = 52;
-            this.metroTile4.Text = "Re-testé le fichier";
-            this.metroTile4.TileImage = global::Signature.Properties.Resources.Reload_WF3;
-            this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile4.UseTileImage = true;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Location = new System.Drawing.Point(296, 361);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox11.TabIndex = 51;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Location = new System.Drawing.Point(296, 332);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox10.TabIndex = 50;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Location = new System.Drawing.Point(296, 303);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox9.TabIndex = 49;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(296, 274);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox8.TabIndex = 48;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(296, 245);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox7.TabIndex = 47;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(296, 208);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox6.TabIndex = 46;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(296, 179);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox5.TabIndex = 45;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(296, 150);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox4.TabIndex = 44;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(296, 121);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox3.TabIndex = 43;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(296, 91);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 23);
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.Location = new System.Drawing.Point(502, 29);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(43, 24);
-            this.metroTile3.TabIndex = 40;
-            this.metroTile3.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile3.TileImage")));
-            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile3.UseTileImage = true;
-            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.Location = new System.Drawing.Point(622, 302);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(165, 82);
-            this.metroTile2.TabIndex = 38;
-            this.metroTile2.Text = "Création de la signature";
-            this.metroTile2.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile2.TileImage")));
-            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile2.UseTileImage = true;
-            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
-            // 
-            // metroTile_openfolder
-            // 
-            this.metroTile_openfolder.Enabled = false;
-            this.metroTile_openfolder.Location = new System.Drawing.Point(305, 117);
-            this.metroTile_openfolder.Name = "metroTile_openfolder";
-            this.metroTile_openfolder.Size = new System.Drawing.Size(43, 24);
-            this.metroTile_openfolder.TabIndex = 5;
-            this.metroTile_openfolder.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile_openfolder.TileImage")));
-            this.metroTile_openfolder.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile_openfolder.UseTileImage = true;
-            this.metroTile_openfolder.Click += new System.EventHandler(this.metroTile_openfolder_Click);
-            // 
-            // metroTile_valider
-            // 
-            this.metroTile_valider.Enabled = false;
-            this.metroTile_valider.Location = new System.Drawing.Point(355, 88);
-            this.metroTile_valider.Name = "metroTile_valider";
-            this.metroTile_valider.Size = new System.Drawing.Size(99, 53);
-            this.metroTile_valider.TabIndex = 4;
-            this.metroTile_valider.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile_valider.TileImage")));
-            this.metroTile_valider.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile_valider.UseTileImage = true;
-            this.metroTile_valider.Click += new System.EventHandler(this.metroTile_valider_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(323, 518);
@@ -713,9 +714,6 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
-            this.metroTabPage2.ResumeLayout(false);
-            this.metroTabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -726,6 +724,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
