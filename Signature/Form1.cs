@@ -119,6 +119,8 @@ namespace Signature
             openFileDialog1.InitialDirectory = "c:\\";
             openFileDialog1.Filter = "Fichier html (*.html)|*.html|All files (*.*)|*.*";
             openFileDialog1.FilterIndex = 2;
+            //openFileDialog1.ReadOnlyChecked = true;
+            //openFileDialog1.ShowReadOnly = true;
             openFileDialog1.RestoreDirectory = true;
             // ouverture
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -183,7 +185,7 @@ namespace Signature
                         {
 
                         }
-                        openFileDialog1.Dispose();
+                        
                     }
                 }
             }
@@ -208,8 +210,8 @@ namespace Signature
             try
             {
                 // 
-                StreamReader reader = File.OpenText(fichierUnique);
-                using (StreamReader sr = new StreamReader(fichierUnique))
+                //StreamReader reader = File.OpenText(fichierUnique);
+                using (StreamReader reader = new StreamReader(fichierUnique))
                 {
                     string ligne;
                     // 
@@ -224,17 +226,18 @@ namespace Signature
                         {
                             reader.Close();
                             ligne.Replace(valeurEntree[compteur], valeurSortie[compteur]);
-
                             
-
-
-                            StreamWriter writer = new StreamWriter(fichierUnique);
-                            foreach (var item in listeElement)
-                            {
-                                writer.WriteLine(item);
-                            }
-                            writer.Close();
                         }
+                        else
+                        {
+                            reader.Close();
+                        }
+                        StreamWriter writer = new StreamWriter(fichierUnique);
+                        foreach (var item in listeElement)
+                        {
+                            writer.WriteLine(item);
+                        }
+                        writer.Close();
 
                         // boucle +
                         compteur++;
