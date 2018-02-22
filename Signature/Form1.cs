@@ -19,6 +19,7 @@ namespace Signature
         string fichierSortie;
         string nNom, nDivers1, nDivers2, nDivers3, nDivers4, nDivers5, nFonction, nMail;
         List<string> listeElement = new List<string>();
+        string dossierSortie = @"C:\Signature";
 
         public Form1()
         {
@@ -203,13 +204,21 @@ namespace Signature
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
+            
             try
             {
-                DirectoryInfo di = Directory.CreateDirectory(@"C:\Signature");
+                if (Directory.Exists(dossierSortie))
+                {
+                    //*
+                }
+                else
+                {
+                    DirectoryInfo di = Directory.CreateDirectory(dossierSortie);
+                }
             }
-            catch
+            catch (Exception f)
             {
-                MessageBox.Show("Erreur de création du dossier signature. Vérifier que vous avez les droits.");
+                MessageBox.Show("Erreur de création du dossier signature : " + f.Message);
             }
             // preparation nom fichier
             fichierSortie = metroTextBox_nnom.Text.Replace(" ", "-");
@@ -232,7 +241,7 @@ namespace Signature
                         string ligne = reader.ReadLine();
                         ligne = ligne.Replace(metroTextBox_divers1.Text, nDivers1).Replace(metroTextBox_nom.Text, nNom).Replace(metroTextBox_telephone.Text, metroTextBox_ntelephone.Text).Replace(metroTextBox_portable.Text, metroTextBox_nportable.Text).Replace(metroTextBox_email.Text, nMail).Replace(metroTextBox_fonction.Text, nFonction).Replace(metroTextBox_divers2.Text, nDivers2).Replace(metroTextBox_divers3.Text, nDivers3).Replace(metroTextBox_divers4.Text, nDivers4).Replace(metroTextBox_divers5.Text, nDivers5) ;
                         listeElement.Add(ligne);
-                        StreamWriter writer = new StreamWriter(@"c:\signature\" + fichierSortie + ".html");
+                        StreamWriter writer = new StreamWriter(dossierSortie + @"\" + fichierSortie + ".html");
                         foreach (var item in listeElement)
                         {
                             writer.WriteLine(item);
