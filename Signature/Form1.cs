@@ -20,6 +20,7 @@ namespace Signature
         string nNom, nDivers1, nDivers2, nDivers3, nDivers4, nDivers5, nFonction, nMail;
         List<string> listeElement = new List<string>();
         string dossierSortie = @"C:\Signature";
+        string dossierModele = @"C:\Signature\Modeles";
 
         public Form1()
         {
@@ -31,6 +32,10 @@ namespace Signature
             //
             resetImage();
             changeCouleur();
+
+            createFolder();
+            createSubFolder();
+
         }
 
         void keepsafe()
@@ -121,7 +126,7 @@ namespace Signature
             changeCouleur();
             // config
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.InitialDirectory = "c:\\";
+            openFileDialog1.InitialDirectory = @"C:\Signature\Modeles";
             openFileDialog1.Filter = "Fichier html (*.html)|*.html|All files (*.*)|*.*";
             openFileDialog1.FilterIndex = 2;
             //openFileDialog1.ReadOnlyChecked = true;
@@ -204,22 +209,8 @@ namespace Signature
 
         private void metroTile2_Click(object sender, EventArgs e)
         {
-            
-            try
-            {
-                if (Directory.Exists(dossierSortie))
-                {
-                    //*
-                }
-                else
-                {
-                    DirectoryInfo di = Directory.CreateDirectory(dossierSortie);
-                }
-            }
-            catch (Exception f)
-            {
-                MessageBox.Show("Erreur de création du dossier signature : " + f.Message);
-            }
+            // creation dossier
+            createFolder();
             // preparation nom fichier
             fichierSortie = metroTextBox_nnom.Text.Replace(" ", "-");
             // copie fichier
@@ -490,6 +481,44 @@ namespace Signature
             nDivers4 = metroTextBox_ndivers4.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
             nDivers5 = metroTextBox_ndivers5.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
 
+        }
+
+        void createFolder()
+        {
+            try
+            {
+                if (Directory.Exists(dossierSortie))
+                {
+                    //*
+                }
+                else
+                {
+                    DirectoryInfo di = Directory.CreateDirectory(dossierSortie);
+                }
+            }
+            catch (Exception f)
+            {
+                MessageBox.Show("Erreur de création du dossier signature : " + f.Message);
+            }
+        }
+
+        void createSubFolder()
+        {
+            try
+            {
+                if (Directory.Exists(dossierModele))
+                {
+                    //*
+                }
+                else
+                {
+                    DirectoryInfo di = Directory.CreateDirectory(dossierModele);
+                }
+            }
+            catch (Exception f)
+            {
+                MessageBox.Show("Erreur de création du dossier modèles : " + f.Message);
+            }
         }
     }
 }
