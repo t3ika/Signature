@@ -17,6 +17,8 @@ namespace Signature
         string fichierNom;
         string fichierUnique;
         string fichierSortie;
+        string nNom, nDivers1, nDivers2, nDivers3, nDivers4, nDivers5, nFonction, nMail;
+        List<string> listeElement = new List<string>();
 
         public Form1()
         {
@@ -27,6 +29,7 @@ namespace Signature
         {
             //
             resetImage();
+            changeCouleur();
         }
 
         void keepsafe()
@@ -114,6 +117,7 @@ namespace Signature
             // reset
             resetImage();
             resetTexte();
+            changeCouleur();
             // config
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.InitialDirectory = "c:\\";
@@ -209,40 +213,31 @@ namespace Signature
             //
             try
             {
+                changeCaractere();
                 // 
                 //StreamReader reader = File.OpenText(fichierUnique);
                 using (StreamReader reader = new StreamReader(fichierUnique))
                 {
-                    string ligne;
                     // 
-                    List<string> listeElement = new List<string>();
                     while (!reader.EndOfStream)
                     {
-                        int compteur = 0;
-
-                        ligne = reader.ReadLine();
+                        string ligne = reader.ReadLine();
+                        ligne = ligne.Replace(metroTextBox_divers1.Text, nDivers1).Replace(metroTextBox_nom.Text, nNom).Replace(metroTextBox_telephone.Text, metroTextBox_ntelephone.Text).Replace(metroTextBox_portable.Text, metroTextBox_nportable.Text).Replace(metroTextBox_email.Text, nMail).Replace(metroTextBox_fonction.Text, nFonction).Replace(metroTextBox_divers2.Text, nDivers2).Replace(metroTextBox_divers3.Text, nDivers3).Replace(metroTextBox_divers4.Text, nDivers4).Replace(metroTextBox_divers5.Text, nDivers5) ;
                         listeElement.Add(ligne);
-                        if (ligne.Contains(valeurEntree[compteur]))
-                        {
-                            //reader.Close();
-                            ligne.Replace(valeurEntree[compteur], valeurSortie[compteur]);
-
-                        }
-                        else
-                        {
-                            //reader.Close();
-                        }
-                        StreamWriter writer = new StreamWriter(@"c:\fichier.txt");
+                        StreamWriter writer = new StreamWriter(fichierSortie + ".html");
                         foreach (var item in listeElement)
                         {
                             writer.WriteLine(item);
                         }
                         writer.Close();
-                        reader.Close();
-                        // boucle +
-                        compteur++;
                     }
+
+
                 }
+                // couleur ok
+                metroTile5.BackColor = Color.FromArgb(28,189,8);
+                // vide la liste
+                listeElement.Clear();
             }
             catch (Exception p)
             {
@@ -355,6 +350,129 @@ namespace Signature
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(p.Message);
             }
+        }
+
+        void changeCouleur()
+        {
+            metroTile5.BackColor = Color.Red;
+        }
+
+        private void metroTextBox_nnom_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_nemail_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_ntelephone_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_nportable_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_nfonction_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_ndivers1_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_ndivers2_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_ndivers3_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_ndivers4_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_ndivers5_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_nom_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_email_TabStopChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTextBox_email_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_telephone_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_portable_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_fonction_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_divers1_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_divers2_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_divers3_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_divers4_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        private void metroTextBox_divers5_TextChanged(object sender, EventArgs e)
+        {
+            changeCouleur();
+        }
+
+        void changeCaractere()
+        {
+            nNom = metroTextBox_nnom.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
+            nMail = metroTextBox_nemail.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
+            nFonction = metroTextBox_nfonction.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
+            nDivers1 = metroTextBox_ndivers1.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
+            nDivers2 = metroTextBox_ndivers2.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
+            nDivers3 = metroTextBox_ndivers3.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
+            nDivers4 = metroTextBox_ndivers4.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
+            nDivers5 = metroTextBox_ndivers5.Text.Replace("é", "&eacute;").Replace("à", "&agrave;").Replace("è", "&egrave;").Replace("î", "&icirc;").Replace("ï", "&iuml;;").Replace("ô", "&ocirc;").Replace("ë", "&euml;").Replace("ç", "&ccedil;").Replace("ü", "&uuml;").Replace("û", "&ucirc;").Replace("â", "&acirc;").Replace("ê", "&ecirc;");
+
         }
     }
 }

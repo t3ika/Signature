@@ -90,6 +90,7 @@
             this.metroTextBox_prenom = new MetroFramework.Controls.MetroTextBox();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -119,6 +120,7 @@
             // 
             // metroTabPage1
             // 
+            this.metroTabPage1.Controls.Add(this.metroTile5);
             this.metroTabPage1.Controls.Add(this.metroTile4);
             this.metroTabPage1.Controls.Add(this.pictureBox11);
             this.metroTabPage1.Controls.Add(this.pictureBox10);
@@ -177,7 +179,7 @@
             // 
             // metroTile4
             // 
-            this.metroTile4.Location = new System.Drawing.Point(622, 214);
+            this.metroTile4.Location = new System.Drawing.Point(622, 198);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(165, 82);
             this.metroTile4.TabIndex = 52;
@@ -289,7 +291,7 @@
             // 
             // metroTile2
             // 
-            this.metroTile2.Location = new System.Drawing.Point(622, 302);
+            this.metroTile2.Location = new System.Drawing.Point(622, 286);
             this.metroTile2.Name = "metroTile2";
             this.metroTile2.Size = new System.Drawing.Size(165, 82);
             this.metroTile2.TabIndex = 38;
@@ -322,6 +324,7 @@
             this.metroTextBox_ndivers5.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_ndivers5.TabIndex = 35;
             this.metroTextBox_ndivers5.UseStyleColors = true;
+            this.metroTextBox_ndivers5.TextChanged += new System.EventHandler(this.metroTextBox_ndivers5_TextChanged);
             // 
             // metroTextBox_divers5
             // 
@@ -331,6 +334,7 @@
             this.metroTextBox_divers5.TabIndex = 34;
             this.metroTextBox_divers5.Text = "N/A";
             this.metroTextBox_divers5.UseStyleColors = true;
+            this.metroTextBox_divers5.TextChanged += new System.EventHandler(this.metroTextBox_divers5_TextChanged);
             // 
             // metroLabel13
             // 
@@ -348,6 +352,7 @@
             this.metroTextBox_ndivers4.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_ndivers4.TabIndex = 32;
             this.metroTextBox_ndivers4.UseStyleColors = true;
+            this.metroTextBox_ndivers4.TextChanged += new System.EventHandler(this.metroTextBox_ndivers4_TextChanged);
             // 
             // metroTextBox_divers4
             // 
@@ -357,6 +362,7 @@
             this.metroTextBox_divers4.TabIndex = 31;
             this.metroTextBox_divers4.Text = "N/A";
             this.metroTextBox_divers4.UseStyleColors = true;
+            this.metroTextBox_divers4.TextChanged += new System.EventHandler(this.metroTextBox_divers4_TextChanged);
             // 
             // metroLabel12
             // 
@@ -374,6 +380,7 @@
             this.metroTextBox_ndivers3.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_ndivers3.TabIndex = 29;
             this.metroTextBox_ndivers3.UseStyleColors = true;
+            this.metroTextBox_ndivers3.TextChanged += new System.EventHandler(this.metroTextBox_ndivers3_TextChanged);
             // 
             // metroTextBox_divers3
             // 
@@ -383,6 +390,7 @@
             this.metroTextBox_divers3.TabIndex = 28;
             this.metroTextBox_divers3.Text = "N/A";
             this.metroTextBox_divers3.UseStyleColors = true;
+            this.metroTextBox_divers3.TextChanged += new System.EventHandler(this.metroTextBox_divers3_TextChanged);
             // 
             // metroLabel11
             // 
@@ -400,6 +408,7 @@
             this.metroTextBox_ndivers2.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_ndivers2.TabIndex = 26;
             this.metroTextBox_ndivers2.UseStyleColors = true;
+            this.metroTextBox_ndivers2.TextChanged += new System.EventHandler(this.metroTextBox_ndivers2_TextChanged);
             // 
             // metroTextBox_divers2
             // 
@@ -409,6 +418,7 @@
             this.metroTextBox_divers2.TabIndex = 25;
             this.metroTextBox_divers2.Text = "N/A";
             this.metroTextBox_divers2.UseStyleColors = true;
+            this.metroTextBox_divers2.TextChanged += new System.EventHandler(this.metroTextBox_divers2_TextChanged);
             // 
             // metroLabel10
             // 
@@ -489,6 +499,7 @@
             this.metroTextBox_ndivers1.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_ndivers1.TabIndex = 15;
             this.metroTextBox_ndivers1.UseStyleColors = true;
+            this.metroTextBox_ndivers1.TextChanged += new System.EventHandler(this.metroTextBox_ndivers1_TextChanged);
             // 
             // metroTextBox_nfonction
             // 
@@ -497,6 +508,7 @@
             this.metroTextBox_nfonction.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_nfonction.TabIndex = 14;
             this.metroTextBox_nfonction.UseStyleColors = true;
+            this.metroTextBox_nfonction.TextChanged += new System.EventHandler(this.metroTextBox_nfonction_TextChanged);
             // 
             // metroTextBox_nportable
             // 
@@ -505,6 +517,7 @@
             this.metroTextBox_nportable.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_nportable.TabIndex = 13;
             this.metroTextBox_nportable.UseStyleColors = true;
+            this.metroTextBox_nportable.TextChanged += new System.EventHandler(this.metroTextBox_nportable_TextChanged);
             // 
             // metroTextBox_ntelephone
             // 
@@ -513,6 +526,7 @@
             this.metroTextBox_ntelephone.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_ntelephone.TabIndex = 12;
             this.metroTextBox_ntelephone.UseStyleColors = true;
+            this.metroTextBox_ntelephone.TextChanged += new System.EventHandler(this.metroTextBox_ntelephone_TextChanged);
             // 
             // metroTextBox_nemail
             // 
@@ -521,6 +535,7 @@
             this.metroTextBox_nemail.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_nemail.TabIndex = 11;
             this.metroTextBox_nemail.UseStyleColors = true;
+            this.metroTextBox_nemail.TextChanged += new System.EventHandler(this.metroTextBox_nemail_TextChanged);
             // 
             // metroTextBox_nnom
             // 
@@ -529,6 +544,7 @@
             this.metroTextBox_nnom.Size = new System.Drawing.Size(143, 23);
             this.metroTextBox_nnom.TabIndex = 9;
             this.metroTextBox_nnom.UseStyleColors = true;
+            this.metroTextBox_nnom.TextChanged += new System.EventHandler(this.metroTextBox_nnom_TextChanged);
             // 
             // metroTextBox_divers1
             // 
@@ -538,6 +554,7 @@
             this.metroTextBox_divers1.TabIndex = 8;
             this.metroTextBox_divers1.Text = "N/A";
             this.metroTextBox_divers1.UseStyleColors = true;
+            this.metroTextBox_divers1.TextChanged += new System.EventHandler(this.metroTextBox_divers1_TextChanged);
             // 
             // metroTextBox_fonction
             // 
@@ -547,6 +564,7 @@
             this.metroTextBox_fonction.TabIndex = 7;
             this.metroTextBox_fonction.Text = "VFONCTION";
             this.metroTextBox_fonction.UseStyleColors = true;
+            this.metroTextBox_fonction.TextChanged += new System.EventHandler(this.metroTextBox_fonction_TextChanged);
             // 
             // metroTextBox_portable
             // 
@@ -556,6 +574,7 @@
             this.metroTextBox_portable.TabIndex = 6;
             this.metroTextBox_portable.Text = "VPORTABLE";
             this.metroTextBox_portable.UseStyleColors = true;
+            this.metroTextBox_portable.TextChanged += new System.EventHandler(this.metroTextBox_portable_TextChanged);
             // 
             // metroTextBox_telephone
             // 
@@ -565,6 +584,7 @@
             this.metroTextBox_telephone.TabIndex = 5;
             this.metroTextBox_telephone.Text = "VTELEPHONE";
             this.metroTextBox_telephone.UseStyleColors = true;
+            this.metroTextBox_telephone.TextChanged += new System.EventHandler(this.metroTextBox_telephone_TextChanged);
             // 
             // metroTextBox_email
             // 
@@ -574,6 +594,8 @@
             this.metroTextBox_email.TabIndex = 4;
             this.metroTextBox_email.Text = "VEMAIL";
             this.metroTextBox_email.UseStyleColors = true;
+            this.metroTextBox_email.TabStopChanged += new System.EventHandler(this.metroTextBox_email_TabStopChanged);
+            this.metroTextBox_email.TextChanged += new System.EventHandler(this.metroTextBox_email_TextChanged);
             // 
             // metroTextBox_nom
             // 
@@ -583,6 +605,7 @@
             this.metroTextBox_nom.TabIndex = 2;
             this.metroTextBox_nom.Text = "VNOM";
             this.metroTextBox_nom.UseStyleColors = true;
+            this.metroTextBox_nom.TextChanged += new System.EventHandler(this.metroTextBox_nom_TextChanged);
             // 
             // metroTabPage2
             // 
@@ -697,11 +720,19 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
+            // metroTile5
+            // 
+            this.metroTile5.CustomBackground = true;
+            this.metroTile5.Location = new System.Drawing.Point(622, 374);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(165, 10);
+            this.metroTile5.TabIndex = 53;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 509);
+            this.ClientSize = new System.Drawing.Size(844, 508);
             this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroTextBox_prenom);
@@ -795,6 +826,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroTile metroTile4;
+        private MetroFramework.Controls.MetroTile metroTile5;
     }
 }
 
